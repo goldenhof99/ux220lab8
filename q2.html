@@ -1,1 +1,58 @@
-<!-- rewrite this document with the required content -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tim Berners-Lee and the World Wide Web</title>
+</head>
+<body>
+  <main>
+    <!-- Appropriately leveled heading -->
+    <h1>Tim Berners-Lee: The Inventor of the World Wide Web</h1>
+
+    <!-- Image of Tim Berners-Lee with a link and alt attribute for screen readers -->
+    <p>
+      <a href="https://entrepreneurship.mit.edu/profile/tim-berners-lee/" target="_blank">
+        <img 
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBWQ6YVO21ciiqKoSN-4CLD8fm7D2qdpV69sH1qw8LXVF6pbtsv4FG0A2AMhsJBcy-mdogkDmDOQX-4IOhb8fpjg" 
+          alt="Portrait of Tim Berners-Lee"
+          style="width: 300px; height: auto;"
+        />
+      </a>
+    </p>
+
+    <!-- Definition list describing the 3 parts of the invention -->
+    <section>
+        <h2>Components of the World Wide Web</h2>
+        <dl>
+          <dt>HTML</dt>
+          <dd>The foundational coding language used to structure content on the web, such as text, images, and links.</dd>
+          
+          <dt>HTTP</dt>
+          <dd>The system used to transfer data between a web server and a browser, enabling the loading of web pages.</dd>
+          
+          <dt>URL</dt>
+          <dd>A specific type of address that provides the location of a resource on the web, such as a webpage or file.</dd>
+        </dl>
+    </section>
+  </main>
+
+  <!-- Footer with a copyright notice and custom element -->
+  <footer>
+    <p>
+      <copyright-year></copyright-year> All rights reserved.
+    </p>
+  </footer>
+
+  <script>
+    // Define a custom element for displaying the copyright year
+    class CopyrightYear extends HTMLElement {
+      connectedCallback() {
+        const currentYear = new Date().getFullYear();
+        this.textContent = `© ${currentYear}`;
+      }
+    }
+    customElements.define('copyright-year', CopyrightYear);
+  </script>
+</body>
+</html>
